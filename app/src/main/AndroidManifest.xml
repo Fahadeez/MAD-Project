@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pk.edu.iqra.onlinemart24_7">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_account_setting" />
+        <activity android:name=".mywallet" />
+        <activity android:name=".category" />
+        <activity android:name=".checkout" /> <!-- homepage -->
+        <activity
+            android:name=".HomepageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- After signin user main homepage until logout, session maintained no need to signin again -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".aboutUs" />
+        <activity android:name=".Cart" />
+        <activity android:name=".ItemList" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

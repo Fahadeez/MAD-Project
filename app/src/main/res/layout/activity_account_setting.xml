@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--main container layout-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_account_setting"
+    android:orientation="vertical"
+    >
+
+<!--    Container header for home button starts-->
+    <LinearLayout
+        android:id="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="hello"-->
+<!--            />-->
+
+<!--    account setting heading and home button - starts here-->
+        <com.google.android.material.appbar.AppBarLayout
+            style="@style/Theme.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/menu_header_bg"
+                app:popupTheme="@style/Theme.AppCompat.Light">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cat_header"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/txtacc_setting_acc_page"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageButton
+                        android:id="@+id/homebutton"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/menu_header_bg"
+                        app:srcCompat="@mipmap/home_foreground"
+                        android:contentDescription="@string/txthome_contentdis_icon" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+<!--        account setting heading and home button - starts here-->
+
+    </LinearLayout>
+
+<!--    Container header for home button starts-->
+
+<!--    main content page starts here-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:background="#EFF4FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/txt_username_accsett"
+                    style="@style/SignUp_TextView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/username" />
+
+                <EditText
+                    android:id="@+id/ed_accsett_username"
+                    style="@style/SignUp_EditText"
+                    android:autofillHints=""
+                    android:hint="@string/nabeel14682"
+                    android:inputType="text" />
+
+<!--                username buttons layout start-->
+                <LinearLayout
+                    style="@style/layout_for_accsetbtns"
+                    >
+
+                    <Button
+                        android:id="@+id/btnusernamesave_acc"
+                        android:text="@string/txtedit_accset"
+                        style="@style/btn_edit_style"
+                        />
+
+                    <Button
+                        android:id="@+id/btnusernameedit_acc"
+                        android:text="@string/txtsave_accset"
+                        style="@style/btn_save_style"
+                        />
+                </LinearLayout>
+<!--                username buttons layout ends-->
+
+                <TextView
+                    android:id="@+id/txt_city_accsett"
+                    style="@style/SignUp_TextView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/txtcity_accset" />
+
+                <EditText
+                    android:id="@+id/ed_accsett_city"
+                    style="@style/SignUp_EditText"
+                    android:autofillHints=""
+                    android:hint="@string/hintcity_accset"
+                    android:inputType="text" />
+
+<!--                city buttons layout start-->
+                <LinearLayout
+                    style="@style/layout_for_accsetbtns"
+                    >
+
+                    <Button
+                        android:id="@+id/btncitysave_acc"
+                        android:text="@string/txtedit_accset"
+                        style="@style/btn_edit_style"
+                        />
+
+                    <Button
+                        android:id="@+id/btncityedit_acc"
+                        android:text="@string/txtsave_accset"
+                        style="@style/btn_save_style"
+                        />
+                </LinearLayout>
+<!--                city buttons layout ends-->
+
+                <TextView
+                    android:id="@+id/txt_country_accsett"
+                    style="@style/SignUp_TextView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/txtcountry_accset" />
+
+                <EditText
+                    android:id="@+id/ed_accsett_country"
+                    style="@style/SignUp_EditText"
+                    android:autofillHints=""
+                    android:hint="@string/hintcountry_accset"
+                    android:inputType="text" />
+
+<!--                city buttons layout start-->
+                <LinearLayout
+                    style="@style/layout_for_accsetbtns"
+                    >
+
+                    <Button
+                        android:id="@+id/btncountrysave_acc"
+                        android:text="@string/txtedit_accset"
+                        style="@style/btn_edit_style"
+                        />
+
+                    <Button
+                        android:id="@+id/btncountryedit_acc"
+                        android:text="@string/txtsave_accset"
+                        style="@style/btn_save_style"
+                        />
+                </LinearLayout>
+<!--                city buttons layout ends-->
+
+                <TextView
+                    android:id="@+id/txt_address_accsett"
+                    style="@style/SignUp_TextView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/txtaddress_accset" />
+
+                <EditText
+                    android:id="@+id/ed_address_country"
+                    style="@style/Address_EditText"
+                    android:autofillHints=""
+                    android:hint="@string/hintaddress_accset"
+                    android:inputType="text" />
+
+<!--                address button layout start-->
+                <LinearLayout
+                    style="@style/layout_for_accsetbtns"
+                    >
+
+                <Button
+                    android:id="@+id/btnaddressedit_acc"
+                    android:text="@string/txtedit_accset"
+                    style="@style/btn_edit_style"
+                    />
+
+                <Button
+                    android:id="@+id/btnaddresssave_acc"
+                    android:text="@string/txtsave_accset"
+                    style="@style/btn_save_style"
+                    />
+                </LinearLayout>
+<!--                address button layout ends-->
+
+            </LinearLayout>
+
+    </ScrollView>
+<!--    main content page starts Ends-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

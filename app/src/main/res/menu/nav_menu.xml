@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Cat_items"
+        android:title="@string/txt_items_nav_menu"
+        />
+
+    <item
+        android:id="@+id/cat_cart"
+        android:title="@string/txt_my_cart_nav_menu"
+        />
+
+    <item
+        android:id="@+id/cat_order"
+        android:title="@string/txt_my_order_nav_menu"
+        />
+
+    <item
+        android:id="@+id/cat_Acc"
+        android:title="@string/txt_acc_sett_nav_menu"
+        />
+
+    <item
+        android:id="@+id/cat_E_Wallet"
+        android:title="@string/txt_ewallet_nav_menu"
+        />
+
+    <item
+        android:id="@+id/cat_About"
+        android:title="@string/txt_about_us_nav_menu"
+        />
+
+    <item
+        android:id="@+id/Empty_slot"
+        android:title=""
+        />
+    <item
+        android:id="@+id/Empty_slot2"
+        android:title=""
+        />
+
+    <group>
+        <item
+            android:id="@+id/cat_Logout"
+            android:title="@string/btn_logout_nav_menu"
+            />
+    </group>
+
+    <group>
+            <item
+                android:id="@+id/cat_register_title"
+                android:title="@string/registered_mark"
+                >
+                <menu>
+                    <item
+                        android:id="@+id/cat_space"
+                        android:title=""
+                        >
+                    </item>
+                </menu>
+            </item>
+    </group>
+</menu>

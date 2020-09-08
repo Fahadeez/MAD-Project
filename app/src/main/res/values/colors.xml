@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary" />
+    <color name="colorPrimaryDark">#5EA5DD</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="SignIn_TextView">#000</color>
+    <color name="SignUp_TextView">#000</color>
+    <color name="Signin_Signup_Color">#03a9f4</color>
+    <color name="btn_NotRegis_Regis">#2196f3</color>
+    <color name="btn_SignIn_Up_Background">#2196f3</color>
+    <color name="btn_SignIn_Up_text">#fff</color>
+    <color name="btn_logout_text">#fff</color>
+    <color name="btn_logout_Background">#2196f3</color>
+    <color name="Main_Bg_Color">#EFF4FF</color>
+    <color name="menu_header_bg">#2d89ef</color>
+</resources>

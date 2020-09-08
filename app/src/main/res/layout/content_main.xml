@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Main_Bg_Color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Theme.AppCompat.Light"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="#fff"
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+
+<!--            homepage heading-->
+        <TextView
+            android:id="@+id/title_hompage"
+            style="@style/title_homepage_content"
+            android:textColor="#03A9F4"
+            android:background="#96D3EF"
+            android:text="@string/homepage"
+            />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+                <!--category container-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#96D3EF"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_topdeals_homepage"
+                            style="@style/txtView_Homepage"
+                            android:text="@string/top_deals"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_header_homepage" />
+
+                    </LinearLayout>
+
+                    <!--            for images top deals-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_topdeal1"
+                            style="@style/image_view_topdeals_homepage"
+                            android:contentDescription="@string/txtblank" />
+
+                        <ImageView
+                            style="@style/image_view_topdeals_homepage"
+                            android:contentDescription="@string/txtblank" />
+
+                        <ImageView
+                            style="@style/image_view_topdeals_homepage"
+                            android:contentDescription="@string/txtblank" />
+
+                    </LinearLayout>
+
+                    <!--            for images tags top deals-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            style="@style/textView_topdeals_homepage"
+                            android:text="@string/txt_home_topDeals_1"
+                            />
+
+                        <TextView
+                            style="@style/textView_topdeals_homepage"
+                            android:text="@string/txt_home_topDeals_2"
+                            />
+
+                        <TextView
+                            style="@style/textView_topdeals_homepage"
+                            android:text="@string/txt_home_topDeals_3"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#96D3EF"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_topsale_homepage"
+                            android:text="@string/top_sales"
+                            style="@style/txtView_Homepage"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_topdeals_homepage" />
+
+                    </LinearLayout>
+
+                    <!--            for images top deals-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            style="@style/image_view_topsales_homepage"
+                            android:contentDescription="@string/txtblank" />
+
+                        <ImageView
+                            style="@style/image_view_topsales_homepage"
+                            android:contentDescription="@string/txtblank"
+                            />
+
+                        <ImageView
+                            style="@style/image_view_topsales_homepage"
+                            android:contentDescription="@string/txtblank"
+                            />
+
+                    </LinearLayout>
+
+                    <!--            for images tags top deals-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            style="@style/textView_topsales_homepage"
+                            android:text="@string/txt_home_topSales_1"
+                            />
+
+                        <TextView
+                            style="@style/textView_topsales_homepage"
+                            android:text="@string/txt_home_topSales_2"
+                            />
+
+                        <TextView
+                            style="@style/textView_topsales_homepage"
+                            android:text="@string/txt_home_topSales_3"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#96D3EF"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_category_homepage"
+                            style="@style/txtView_Homepage"
+                            android:text="@string/category"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_topsale_homepage" />
+
+                    </LinearLayout>
+
+                    <!--here categories-->
+                    <!--            only button images-->
+
+
+                    <!--            categories first row-->
+                    <LinearLayout
+                        android:id="@+id/first_row_ctg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/btn_health_ctg_home"
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/health"
+                            android:contentDescription="@string/txtblank" />
+
+                        <ImageView
+                            android:id="@+id/btn_apparel_ctg_home"
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/apparel_images"
+                            android:contentDescription="@string/txtblank" />
+
+                        <ImageView
+                            android:id="@+id/btn_phn_acc_home"
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/phone_accessories"
+                            android:contentDescription="@string/txtblank" />
+
+                    </LinearLayout>
+
+                    <!--            for btn tags first row-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            style="@style/textView_firstrow_homepage"
+                            android:text="@string/txt_home_Cat_1"
+                            />
+
+                        <TextView
+                            style="@style/textView_firstrow_homepage"
+                            android:text="@string/txt_home_Cat_2"
+                            />
+
+                        <TextView
+                            style="@style/textView_firstrow_homepage"
+                            android:text="@string/txt_home_Cat_3"
+                            />
+
+                    </LinearLayout>
+
+                    <!--            categories second row-->
+                    <LinearLayout
+                        android:id="@+id/second_row_ctg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/btn_stationary_ctg_home"
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/stationary_images"
+                            android:contentDescription="@string/txtblank" />
+
+                        <ImageView
+                            android:id="@+id/btn_food_ctg_home"
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/food_items"
+                            android:contentDescription="@string/txtblank" />
+
+                        <ImageView
+                            android:id="@+id/btn_electronics_home"
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/electronics_items"
+                            android:contentDescription="@string/txtblank" />
+
+                    </LinearLayout>
+
+                    <!--            for btn tags Second row-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            style="@style/textView_secondrow_homepage"
+                            android:text="@string/txt_home_Cat_4"
+                            />
+
+                        <TextView
+                            style="@style/textView_secondrow_homepage"
+                            android:text="@string/txt_home_Cat_5"
+                            />
+
+                        <TextView
+                            style="@style/textView_secondrow_homepage"
+                            android:text="@string/txt_home_Cat_6"
+                            />
+
+                    </LinearLayout>
+
+                    <!--            categories third row-->
+                    <LinearLayout
+                        android:id="@+id/third_row_ctg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/btn_books_ctg_home"
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/books"
+                            android:contentDescription="@string/txtblank"
+                            />
+
+                        <ImageView
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/coming_soon"
+                            android:contentDescription="@string/txtblank"
+                            />
+
+                        <ImageView
+                            style="@style/btn_ctg_homepage"
+                            android:src="@drawable/coming_soon"
+                            android:contentDescription="@string/txtblank" />
+
+                    </LinearLayout>
+
+                    <!--            for btn tags third row-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            style="@style/textView_thirdrow_homepage"
+                            android:text="@string/txt_home_Cat_7"
+                            />
+
+                        <TextView
+                            style="@style/textView_thirdrow_homepage"
+                            android:text="@string/txt_home_Cat_8"
+                            />
+
+                        <TextView
+                            style="@style/textView_thirdrow_homepage"
+                            android:text="@string/txt_home_Cat_9"
+                            />
+
+                    </LinearLayout>
+
+                    <!--        footer-->
+                    <TextView
+                        android:id="@+id/txt_footer_homepage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/welcome_username"
+                        android:textColor="#03A9F4"
+                        android:textSize="14sp"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginBottom="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_category_homepage" />
+
+                </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

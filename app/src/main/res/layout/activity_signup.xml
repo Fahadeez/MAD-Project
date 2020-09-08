@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Main_Bg_Color"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_signup_heading"
+            style="@style/SignIn_SignUp_TextView"
+            android:text="@string/signup_heading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_email_signup"
+            style="@style/SignUp_TextView"
+            android:text="@string/email"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_signup_heading" />
+
+        <EditText
+            android:id="@+id/ed_signup_email"
+            android:hint="@string/nabeel_14682_iqra_edu_pk"
+            app:layout_constraintStart_toStartOf="@+id/txt_email_signup"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email_signup"
+            style="@style/SignUp_EditText"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/txt_username_signup"
+            android:text="@string/username"
+            app:layout_constraintStart_toStartOf="@+id/ed_signup_email"
+            app:layout_constraintTop_toBottomOf="@+id/ed_signup_email"
+            style="@style/SignUp_TextView"
+            />
+
+        <EditText
+            android:id="@+id/ed_signup_username"
+            android:hint="@string/nabeel14682"
+            app:layout_constraintStart_toStartOf="@+id/txt_username_signup"
+            app:layout_constraintTop_toBottomOf="@+id/txt_username_signup"
+            style="@style/SignUp_EditText"
+            android:autofillHints=""
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txt_phonesignup"
+            android:text="@string/phone_number"
+            app:layout_constraintStart_toStartOf="@+id/ed_signup_username"
+            app:layout_constraintTop_toBottomOf="@+id/ed_signup_username"
+            style="@style/SignUp_TextView"
+            />
+
+        <EditText
+            android:id="@+id/ed_signup_phone"
+            android:hint="@string/_0301"
+            app:layout_constraintStart_toStartOf="@+id/txt_phonesignup"
+            app:layout_constraintTop_toBottomOf="@+id/txt_phonesignup"
+            style="@style/SignUp_EditText"
+            android:autofillHints=""
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/txt_Cnicsignup"
+            android:text="@string/cnic"
+            app:layout_constraintStart_toStartOf="@+id/ed_signup_phone"
+            app:layout_constraintTop_toBottomOf="@+id/ed_signup_phone"
+            style="@style/SignUp_TextView"
+            />
+
+        <EditText
+            android:id="@+id/ed_signup_cnic"
+            android:hint="@string/_42501"
+            app:layout_constraintStart_toStartOf="@+id/txt_Cnicsignup"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Cnicsignup"
+            style="@style/SignUp_EditText"
+            android:autofillHints=""
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txt_Password"
+            android:text="@string/password"
+            app:layout_constraintStart_toStartOf="@+id/ed_signup_cnic"
+            app:layout_constraintTop_toBottomOf="@+id/ed_signup_cnic"
+            style="@style/SignUp_TextView"
+            />
+
+        <EditText
+            android:id="@+id/ed_signup_password"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/txt_Password"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Password"
+            style="@style/SignUp_EditText"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:text="@string/signup"
+            app:layout_constraintEnd_toEndOf="@+id/ed_signup_password"
+            app:layout_constraintStart_toStartOf="@+id/ed_signup_password"
+            app:layout_constraintTop_toBottomOf="@+id/ed_signup_password"
+            style="@style/btn_SignIn_SignUp"
+            />
+
+        <Button
+            android:id="@+id/btnRegistered"
+            style="@style/btn_NotRegis_Regis"
+            android:text="@string/already_registered_signin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

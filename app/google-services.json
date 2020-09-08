@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "191195927674",
+    "firebase_url": "https://online-mart-24-7.firebaseio.com",
+    "project_id": "online-mart-24-7",
+    "storage_bucket": "online-mart-24-7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191195927674:android:5fa75a937e4d08680dd7c3",
+        "android_client_info": {
+          "package_name": "pk.edu.iqra.onlinemart24_7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191195927674-gtakp2aq3spj2quu4h8r80kmimj1sjra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVsk_3QC9b0r8zSP33ohgUkGqnvV2Ypio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191195927674-gtakp2aq3spj2quu4h8r80kmimj1sjra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
