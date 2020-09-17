@@ -17,10 +17,10 @@ class productAdapter(val productList: ArrayList<Product>):
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.ssd_image?.setImageBitmap(productList[position].image)
-        holder.ssd_title?.text = productList[position].title
-        holder.ssd_desc?.text = productList[position].description
-        holder.ssd_price?.text = productList[position].price
+//        holder.ssd_image?.setImageBitmap(productList[position].image)
+//        holder.ssd_title?.text = productList[position].title
+//        holder.ssd_desc?.text = productList[position].description
+//        holder.ssd_price?.text = productList[position].price
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,9 +29,9 @@ class productAdapter(val productList: ArrayList<Product>):
     }
 
     class ViewHolder (itemView: View):RecyclerView.ViewHolder(itemView) {
-        val ssd_image = itemView.ssd_image
-        val ssd_title = itemView.ssd_title
-        val ssd_desc = itemView.ssd_desc
-        val ssd_price = itemView.ssd_price
+        val ssd_image = itemView.image
+        val ssd_title = itemView.title
+        val ssd_desc = itemView.discount
+        val ssd_price = itemView.price
     }
 }

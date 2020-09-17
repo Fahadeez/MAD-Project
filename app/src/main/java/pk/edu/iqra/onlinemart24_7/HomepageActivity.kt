@@ -42,6 +42,12 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        btn_electronics_home.setOnClickListener {
+          Intent(this,electronic_category_data::class.java).apply {
+              startActivity(this)
+              finish()
+          }
+        }
 
         drawerLayout = findViewById(R.id.drawerLayout)
         navigationView = findViewById(R.id.nav_view)
@@ -149,6 +155,7 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
+        showToast("Current User: $currentUser")
         ref = database.getReference("users")
         if (currentUser != null) {
             ref.child(currentUser.uid).addValueEventListener(object: ValueEventListener{
