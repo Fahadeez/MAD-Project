@@ -2,6 +2,7 @@
 <!--hold recycleview data-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/border_bottom"
@@ -63,7 +64,6 @@
                 android:padding="5dp"
                 android:text="Quantity available 1"
                 android:textColor="@color/fawn"
-<<<<<<< HEAD
                 android:textSize="14sp"
                 />
 <RelativeLayout
@@ -77,19 +77,16 @@
         android:text="Rs 5000"
         android:textStyle="bold"
         android:textColor="#000"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        tools:ignore="DuplicateIds" />
     <Button
         android:id="@+id/btn_add"
         style="@style/add_btn_style"
         android:text="Add"
-        />
+        android:layout_margin="3dp"
+        android:layout_marginStart="5dp" />
 </RelativeLayout>
-
-=======
-                android:textSize="14sp" />
->>>>>>> 41ce66772360b7fb44887c8fbde7372ba8a84cba
-
-        <RelativeLayout
+            <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -100,10 +97,13 @@
                 android:text="Rs 5000"
                 android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="DuplicateIds" />
             <Button
                 android:id="@+id/add"
                 style="@style/add_btn_style"
+                android:layout_margin="3dp"
+                android:layout_marginStart="5dp"
                 android:text="Add"
                 />
         </RelativeLayout>

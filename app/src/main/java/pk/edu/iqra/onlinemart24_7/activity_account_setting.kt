@@ -2,7 +2,6 @@ package pk.edu.iqra.onlinemart24_7
 
 import android.app.Activity
 import android.content.Intent
-import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -12,7 +11,6 @@ import com.bumptech.glide.Glide
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
@@ -22,13 +20,8 @@ import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.activity_account_setting.*
 import kotlinx.android.synthetic.main.activity_category.homebutton
-import kotlinx.android.synthetic.main.activity_signup.*
-import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.menu_header.*
-import java.net.URL
 import java.util.*
-import java.util.Calendar.getInstance
-
 
 class activity_account_setting : AppCompatActivity() {
 
@@ -181,13 +174,9 @@ class activity_account_setting : AppCompatActivity() {
                     val url = downloadUrl.toString()
                     Log.d("url", url)
 
-//                    Glide.with(baseContext)
-//                        .load(downloadUrl)
-//                        .into(btnuser_profile_pic)
-
                     Glide.with(baseContext)
                         .load(downloadUrl)
-                        .into(round_user_image)
+                        .into(userimage_acc_setting)
                 }
             }
         }

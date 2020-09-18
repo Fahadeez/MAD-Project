@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
 //to validate all the null fields in signin form and after signin Intent to homepage activity
 
         btnsignin.setOnClickListener{
@@ -107,7 +106,6 @@ class MainActivity : AppCompatActivity() {
                 showToast("Failed To SignIn To Account, ${it.message}")
             }
     }
-
         else {
             showToast("Please fill all the empty fields!")
         }
