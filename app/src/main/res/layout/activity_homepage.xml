@@ -13,10 +13,10 @@
     >
 
     <include
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
+        android:id="@+id/content_main"
         layout="@layout/content_main"
-        />
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
 
 <!--    <com.google.android.material.navigation.NavigationView-->
     <com.google.android.material.navigation.NavigationView
@@ -28,6 +28,5 @@
         app:headerLayout="@layout/menu_header"
         app:menu="@menu/nav_menu"
         />
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

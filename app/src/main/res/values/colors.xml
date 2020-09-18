@@ -13,10 +13,4 @@
     <color name="btn_logout_Background">#2196f3</color>
     <color name="Main_Bg_Color">#EFF4FF</color>
     <color name="menu_header_bg">#2d89ef</color>
-    <color name="dull_green">#F2FEF2</color>
-    <color name="green">#04BF0B</color>
-    <color name="gray">#6C736C</color>
-    <color name="fawn">#D6B281</color>
-
-
 </resources>

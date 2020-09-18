@@ -83,14 +83,18 @@ class SignupActivity : AppCompatActivity() {
     val uid = FirebaseAuth.getInstance().uid ?: ""
     val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
 
-    val user = Users(uid, Utils.getText(ed_signup_username), Utils.getText(ed_signup_password), Utils.getText(ed_signup_cnic))
+    val user = Users(uid,
+        Utils.getText(ed_signup_username),
+        Utils.getText(ed_signup_phone),
+        Utils.getText(ed_signup_cnic),
+        "",
+        "",
+        "",
+        "")
 
     ref.setValue(user)
         .addOnSuccessListener {
             Log.d("SignUpActivity", "Successfully saved user info to firebase database - uid: $uid")
         }
-//        .addOnFailureListener{
-//            Log.d("SignUpActivity", "Failed to saved user info to firebase database - uid: $uid")
-//        }
 }
 }
