@@ -8,5 +8,4 @@ android:color="@color/green" />
         android:startColor="@color/dull_green"
         android:endColor="@color/dull_green"
         android:angle="-90" />
-
 </shape>
