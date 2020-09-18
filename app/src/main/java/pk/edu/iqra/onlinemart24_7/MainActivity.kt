@@ -1,17 +1,26 @@
 //sign in activity main activity
 package pk.edu.iqra.onlinemart24_7
 
+import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
+import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_signin.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var sharedPreferences: SharedPreferences;
+    private lateinit var mProductDatabase: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
+        sharedPreferences = getSharedPreferences(Utils.AUTH_FILE, Context.MODE_PRIVATE)
 
         // to launch signup activity
         btnNotRegistered.setOnClickListener {
@@ -52,8 +61,33 @@ class MainActivity : AppCompatActivity() {
                 if (!it.isSuccessful) return@addOnCompleteListener
 
 //                else if successful
-                Log.d("SignIn", "Successfully SignIn with uid: ${it.result?.user?.uid}")
-                showToast("SignIn Successfully!")
+               val uid =  it.result?.user?.uid
+                val editor = sharedPreferences.edit()
+                mProductDatabase = FirebaseDatabase.getInstance().reference
+                    .child("users").child("$uid")
+                val postListener = object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+                        // Get Post object and use the values to update the UI
+                        val post = dataSnapshot.value
+                        val gson = Gson()
+                        val json = gson.toJson(post)
+                        showToast("Post $post")
+                        Log.e("Post: ","Post: $post")
+                        editor.putString(Utils.USERNAME,json)
+                        editor.apply()
+
+                        // ...
+                    }
+
+                    override fun onCancelled(databaseError: DatabaseError) {
+                        // Getting Post failed, log a message
+                        Log.w("database failed", "loadPost:onCancelled", databaseError.toException())
+                        // ...
+                    }
+                }
+                mProductDatabase.addValueEventListener(postListener)
+
+                showToast("SignIn Successfully! ${uid}")
 
 
 

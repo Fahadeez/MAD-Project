@@ -1,4 +1,4 @@
-package pk.edu.iqra.onlinemart24_7
+package pk.edu.iqra.onlinemart24_7.model
 
 import android.graphics.Bitmap
 

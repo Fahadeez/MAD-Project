@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import kotlinx.android.synthetic.main.electronic_category_data.view.*
+import pk.edu.iqra.onlinemart24_7.model.Product
 
 //class extends RecyclerView Adapter
 // manages and displays our data

@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".electronic_category_data"/>
+        <activity android:name=".HealthCategory"/>
         <activity android:name=".activity_account_setting" />
         <activity android:name=".mywallet" />
         <activity android:name=".category" />

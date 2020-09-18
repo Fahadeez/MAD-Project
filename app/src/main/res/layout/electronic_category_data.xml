@@ -85,7 +85,7 @@
         android:textColor="#000"
         android:textSize="16sp" />
     <Button
-        android:id="@+id/add"
+        android:id="@+id/btn_add"
         style="@style/add_btn_style"
         android:text="Add"
         />
