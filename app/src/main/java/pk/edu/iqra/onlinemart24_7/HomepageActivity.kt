@@ -51,6 +51,7 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+<<<<<<< HEAD
         btn_electronics_home.setOnClickListener {
             Intent(this, electronic_category_data::class.java).apply {
                 startActivity(this)
@@ -63,6 +64,8 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 finish()
             }
         }
+=======
+>>>>>>> 41ce66772360b7fb44887c8fbde7372ba8a84cba
 
         drawerLayout = findViewById(R.id.drawerLayout)
         navigationView = findViewById(R.id.nav_view)
@@ -170,7 +173,10 @@ class HomepageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41ce66772360b7fb44887c8fbde7372ba8a84cba
         ref = database.getReference("users")
         if (currentUser != null) {
             ref.child(currentUser.uid).addValueEventListener(object : ValueEventListener {

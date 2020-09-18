@@ -232,7 +232,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="40dp">
 
                     <TextView
                         style="@style/textView_thirdrow_homepage"
@@ -249,22 +250,6 @@
                         android:text="@string/txtelectronics_catpage" />
 
                 </LinearLayout>
-
-                <!--footer-->
-                <TextView
-                    android:id="@+id/txt_footer_homepage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginBottom="40dp"
-                    android:gravity="center"
-                    android:text="@string/welcome_username"
-                    android:textColor="#03A9F4"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_category_homepage" />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>

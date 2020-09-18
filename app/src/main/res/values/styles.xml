@@ -55,7 +55,7 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/SignUp_TextView</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">30dp</item>
     </style>
 
@@ -196,16 +196,17 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">right</item>
     </style>
+
     <style name="discount_textView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/border_green</item>
-        <item name="android:textColor">@color/green</item>
         <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/green</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:textSize">16sp</item>
-
     </style>
+
     <style name="add_btn_style">
         <item name="android:layout_width">80dp</item>
         <item name="android:layout_height">40dp</item>

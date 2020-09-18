@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--main container layout-->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_account_setting"
     android:orientation="vertical"
-    >
+    tools:context=".activity_account_setting">
 
 <!--    Container header for home button starts-->
     <LinearLayout
@@ -97,6 +97,55 @@
                 >
 
                 <TextView
+                    style="@style/SignUp_TextView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Image"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/userimage_acc_setting"
+                    android:textColor="#595757"
+                    android:background="@drawable/btn_round"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="Upload Image" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:text="Upload Image"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/round_user_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnuserimageedit_acc"
+                        android:text="Submit"
+                        android:layout_width="120dp"
+                        style="@style/btn_save_style" />
+
+                </LinearLayout>
+
+
+                <TextView
                     android:id="@+id/txt_username_accsett"
                     style="@style/SignUp_TextView"
                     android:layout_marginLeft="20dp"
@@ -116,13 +165,13 @@
                     >
 
                     <Button
-                        android:id="@+id/btnusernamesave_acc"
+                        android:id="@+id/btnusernameedit_acc"
                         android:text="@string/txtedit_accset"
                         style="@style/btn_edit_style"
                         />
 
                     <Button
-                        android:id="@+id/btnusernameedit_acc"
+                        android:id="@+id/btnusernamesave_acc"
                         android:text="@string/txtsave_accset"
                         style="@style/btn_save_style"
                         />
@@ -150,13 +199,13 @@
                     >
 
                     <Button
-                        android:id="@+id/btncitysave_acc"
+                        android:id="@+id/btncityedit_acc"
                         android:text="@string/txtedit_accset"
                         style="@style/btn_edit_style"
                         />
 
                     <Button
-                        android:id="@+id/btncityedit_acc"
+                        android:id="@+id/btncitysave_acc"
                         android:text="@string/txtsave_accset"
                         style="@style/btn_save_style"
                         />
@@ -184,13 +233,13 @@
                     >
 
                     <Button
-                        android:id="@+id/btncountrysave_acc"
+                        android:id="@+id/btncountryedit_acc"
                         android:text="@string/txtedit_accset"
                         style="@style/btn_edit_style"
                         />
 
                     <Button
-                        android:id="@+id/btncountryedit_acc"
+                        android:id="@+id/btncountrysave_acc"
                         android:text="@string/txtsave_accset"
                         style="@style/btn_save_style"
                         />
@@ -206,7 +255,7 @@
                     android:text="@string/txtaddress_accset" />
 
                 <EditText
-                    android:id="@+id/ed_address_country"
+                    android:id="@+id/ed_address"
                     style="@style/Address_EditText"
                     android:autofillHints=""
                     android:hint="@string/hintaddress_accset"

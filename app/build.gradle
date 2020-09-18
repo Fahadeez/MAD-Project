@@ -46,7 +46,7 @@ dependencies {
     // add the Firebase SDK for Google Analytics
     implementation 'com.google.firebase:firebase-analytics:17.5.0'
 //    add the Firebase Auth SDK - Android Kotlin
-    implementation 'com.google.firebase:firebase-auth-ktx:19.3.2'
+    implementation 'com.google.firebase:firebase-auth-ktx:19.4.0'
 
 //    firebsae storage sdk
     implementation 'com.google.firebase:firebase-storage-ktx:19.2.0'
